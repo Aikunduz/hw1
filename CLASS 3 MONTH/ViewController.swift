@@ -47,22 +47,24 @@ class ViewController: UIViewController {
             performSegue(withIdentifier: "goToSuccess", sender: self)
         }
         
+        
+        
     }
     
     
-//    private func checkEmptyTf(textField: UITextField) -> Bool{
-//        let tf = textField.text
-//        if  tf == "" {
-//            textField.layer.borderWidth = 1
-//            textField.layer.borderColor = UIColor.red.cgColor
-//            textField.placeholder = "Заполните пж"
-//            return false
-//        } else {
-//            textField.layer.borderWidth = 0
-//            textField.layer.borderColor = UIColor.red.cgColor
-//            return true
-//        }
-//    }
+    private func checkEmptyTf(textField: UITextField) -> Bool{
+        let tf = textField.text
+        if  tf == "" {
+            textField.layer.borderWidth = 1
+            textField.layer.borderColor = UIColor.red.cgColor
+            textField.placeholder = "Заполните пж"
+            return false
+        } else {
+            textField.layer.borderWidth = 0
+            textField.layer.borderColor = UIColor.red.cgColor
+            return true
+        }
+    }
     
 }
 
